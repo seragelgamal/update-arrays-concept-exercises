@@ -39,6 +39,5 @@ function replaceAll(anArray, oldVal, newVal) {
 
 // q4
 function swap(anArray, index1, index2) {
-    let element1 = anArray.splice(index1, 1, anArray[index2]);
-    anArray.splice(index2, 1, element1[0]);
+    anArray.splice(index1, 1, anArray.splice(index2, 1, anArray[index1])[0]);
 }
